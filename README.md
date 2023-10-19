@@ -10,7 +10,7 @@ This Python script demonstrates how to access and analyze economic data from the
 - [Getting Started](#getting-started)
 - [Code Explanation](#code-explanation)
 - [Conclusion](#conclusion)
-    1. Importing Libraries
+    1. Importing Libraries (#Importing Libraries)
     2. Setting DataFrame Options
     3. Accessing API Key from Kaggle Secrets
     4. Creating a FRED Object
