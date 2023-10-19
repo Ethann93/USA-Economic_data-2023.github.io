@@ -4,32 +4,6 @@
 
 This Python script demonstrates how to access and analyze economic data from the Federal Reserve Economic Data (FRED) database using the FRED API. The code goes through various steps, including data retrieval, manipulation, and visualization. It specifically focuses on unemployment and labor force participation rates in the United States. To access the FRED API, this code utilizes the Kaggle Secrets feature to securely store the API key.
 
-## Table of Contents
-
-- [Prerequisites](#prerequisites)
-- [Getting Started](#getting-started)
-- [Code Explanation](#code-explanation)
-- [Conclusion](#conclusion)
-    1. Importing Libraries (#Importing Libraries)
-    2. Setting DataFrame Options
-    3. Accessing API Key from Kaggle Secrets
-    4. Creating a FRED Object
-    5. Search for Economic Data
-    6. Plotting Raw Data
-    7. Searching for Unemployment Data
-    8. Filtering Unemployment Data
-    9. Creating a DataFrame for State Unemployment Rates
-    10. Plotting NaN Values by Year
-    11. Dropping NaN Values
-    12. Renaming State Names
-    13. Plotting Unemployment Rates by States
-    14. Plotting May 2020 Unemployment Rates
-    15. Pulling Participation Rate Data
-    16. Creating a DataFrame for State Participation Rates
-    17. Renaming State Names for Participation Rates
-    18. Changing District of Columbia's Name
-    19. Plotting Participation Rates by States
-    20. Plotting Unemployment vs. Participation Rates
 
 ## Prerequisites
 To run the script, you'll need the following prerequisites:
@@ -44,12 +18,15 @@ Install the necessary Python libraries using pip install pandas numpy matplotlib
 
 ## Code Explanation
 ### 1. Importing Libraries
+
 The script starts by importing essential Python libraries for data manipulation, plotting, and handling time-related functionality.
 
 ### 2. Setting DataFrame Options
+
 It configures Pandas to display a maximum of 500 columns in DataFrames, ensuring that a large number of columns can be viewed.
 
 ### 3. Accessing API Key from Kaggle Secrets
+
 The script securely retrieves the FRED API key from Kaggle Secrets and stores it in the fred_api variable.
 
 ### 4. Creating a FRED Object
@@ -65,43 +42,57 @@ The script retrieves and plots the S&P 500 data using the fred.get_series functi
 The script searches for unemployment-related data and stores the results in the unemployement_resuts DataFrame.
 
 ### 8. Filtering Unemployment Data
+
 It filters the unemployment data to include only data with seasonal adjustments and in percentage units. The script narrows down the results to those with "Unemployment Rate" in the title.
 
 ### 9. Creating a DataFrame for State Unemployment Rates
+
 The script iterates through the filtered unemployment data and creates a DataFrame called unemployment_states containing unemployment rates for different U.S. states.
 
 ### 10. Plotting NaN Values by Year
+
 It plots the number of NaN (missing) values in the unemployment data by year.
 
 ### 11. Dropping NaN Values
+
 The script drops rows with NaN values from the unemployment_states DataFrame.
 
 ### 12. Renaming State Names
+
 It renames the columns of the unemployment_states DataFrame to include the full state names.
 
 ### 13. Plotting Unemployment Rates by States
+
 It uses Plotly Express to create line plots of unemployment rates by states.
 
 ### 14. Plotting May 2020 Unemployment Rates
+
 It creates a horizontal bar plot of unemployment rates for May 2020 for various states.
 
 ### 15. Pulling Participation Rate Data
+
 The script searches for labor force participation rate data and filters it for seasonally adjusted data in percentage units.
 
 ### 16. Creating a DataFrame for State Participation Rates
+
 It creates a DataFrame called Participation_states containing labor force participation rates for different states.
 
 ### 17. Renaming State Names for Participation Rates
+
 The script renames the columns of the Participation_states DataFrame to include the full state names.
 
 ### 18. Changing District of Columbia's Name
+
 It changes the name of the "District of Columbia" column to "The District of Columbia."
 
 ### 19. Plotting Participation Rates by States
+
 It uses Plotly Express to create line plots of labor force participation rates by states.
 
 ### 20. Plotting Unemployment vs. Participation Rates
+
 The script creates a 10x5 grid of subplots to compare unemployment and participation rates for various states from 2020 to 2023.
 
 ## Conclusion
+
 This code provides a comprehensive example of how to use the FRED API to access and analyze economic data, specifically related to unemployment and labor force participation rates in the United States. It includes data retrieval, data cleaning, and visualization of the economic data for different states and time periods.
