@@ -69,6 +69,8 @@ It uses Plotly Express to create line plots of unemployment rates by states.
 
 It creates a horizontal bar plot of unemployment rates for May 2020 for various states.
 
+![download (1)](https://github.com/Ethann93/Ultra-Marathon/assets/133777296/621028b4-7d25-4e30-a2bc-3ca4b9345d99)
+
 ### 15. Pulling Participation Rate Data
 
 The script searches for labor force participation rate data and filters it for seasonally adjusted data in percentage units.
@@ -92,6 +94,9 @@ It uses Plotly Express to create line plots of labor force participation rates b
 ### 20. Plotting Unemployment vs. Participation Rates
 
 The script creates a 10x5 grid of subplots to compare unemployment and participation rates for various states from 2020 to 2023.
+
+![download](https://github.com/Ethann93/Ultra-Marathon/assets/133777296/abceb8b7-d5a6-4e63-8610-2e76881d8ed9)
+
 
 ## Conclusion
 
